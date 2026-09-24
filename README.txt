@@ -1,4 +1,4 @@
-Legacy Rides case study
+DeluxeSide case study
 
-Main file: legacy-rides.html
-Styles and IDs are namespaced under #legacy-rides-case-study to reduce homepage conflicts.
+Main page: deluxeside.html
+The case study is isolated with #deluxeside-case-study and namespaced IDs to reduce conflicts with a site's homepage HTML/CSS/JavaScript.

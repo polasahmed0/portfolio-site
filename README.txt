@@ -1,10 +1,4 @@
-BETTER APPLIANCE MD CASE STUDY
-Filename: better-appliance-md.html
+Legacy Rides case study
 
-This version is isolated for embedding alongside a homepage.
-- No index.html is used.
-- All case-study CSS selectors are scoped under #badmd-case-study.
-- Navigation IDs use unique badmd- names.
-- JavaScript animation selectors are scoped to this case study.
-- Mobile/responsive behavior is preserved.
-- Assets remain in the assets/ folder.
+Main file: legacy-rides.html
+Styles and IDs are namespaced under #legacy-rides-case-study to reduce homepage conflicts.

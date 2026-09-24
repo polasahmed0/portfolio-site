@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Better Appliance DMV SEO case study showing the challenges, strategy, execution, and organic search growth achieved through technical SEO, local SEO, content optimization, and stronger search visibility." />
+  <title>Better Appliance DMV | SEO Case Study</title>
+  <style>
+
+    #badmv-case-study{
+      --bg:#F8FAFC;
+      --card:#FFFFFF;
+      --text:#0F172A;
+      --muted:#64748B;
+      --brand:#2563EB;
+      --brand-dark:#1D4ED8;
+      --success:#10B981;
+      --border:#E2E8F0;
+      --dark:#0B1220;
+      --soft-blue:#EFF6FF;
+      --soft-green:#ECFDF5;
+      --shadow:0 20px 60px rgba(15,23,42,.08);
+      --radius:24px;
+    }
+    #badmv-case-study, #badmv-case-study *{box-sizing:border-box}
+    #badmv-case-study{scroll-behavior:smooth}
+#badmv-case-study{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+    }
+#badmv-case-study a{color:inherit;text-decoration:none}
+#badmv-case-study img{display:block;max-width:100%}
+    .badmv-wrap{width:min(1180px, calc(100% - 36px)); margin:auto}
+    .badmv-nav{
+      position:sticky; top:0; z-index:50;
+      background:rgba(248,250,252,.88);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid rgba(226,232,240,.9);
+    }
+    .badmv-nav-inner{
+      height:76px; display:flex; align-items:center; justify-content:space-between; gap:24px;
+    }
+    .badmv-brand{
+      display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:-.02em;
+    }
+    .badmv-brand-mark{
+      width:42px;height:42px;border-radius:14px;
+      display:grid;place-items:center;
+      color:white;background:linear-gradient(135deg,var(--brand),#60A5FA);
+      box-shadow:0 10px 25px rgba(37,99,235,.25);
+      font-weight:900;
+    }
+    .badmv-nav-links{display:flex;gap:28px;color:#475569;font-weight:600;font-size:14px}
+    .badmv-nav-links a:hover{color:var(--brand)}
+    .badmv-nav-cta{
+      padding:11px 17px;border-radius:12px;background:var(--text);color:white;font-weight:700;font-size:14px
+    }
+
+    .badmv-hero{padding:80px 0 48px}
+    .badmv-hero-grid{
+      display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:54px;
+    }
+    .badmv-eyebrow{
+      display:inline-flex;align-items:center;gap:9px;
+      padding:8px 12px;border-radius:999px;background:var(--soft-blue);
+      color:var(--brand);font-size:13px;font-weight:800;letter-spacing:.02em;
+      border:1px solid #DBEAFE;
+    }
+    .badmv-dot{width:8px;height:8px;border-radius:999px;background:var(--success)}
+    h1{
+      margin:20px 0 18px;
+      font-size:clamp(46px,6vw,78px);
+      line-height:1.02; letter-spacing:-.055em;
+    }
+    .badmv-hero p{font-size:19px;color:#475569;max-width:720px;margin:0 0 28px}
+    .badmv-hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+    .badmv-btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      padding:14px 20px;border-radius:14px;font-weight:800;font-size:15px;
+      border:1px solid transparent;
+    }
+    .badmv-btn-primary{background:var(--brand);color:white;box-shadow:0 12px 30px rgba(37,99,235,.22)}
+    .badmv-btn-secondary{background:white;border-color:var(--border);color:var(--text)}
+    .badmv-hero-card{
+      position:relative;overflow:hidden;border-radius:32px;
+      background:var(--card);box-shadow:var(--shadow);border:1px solid var(--border);
+    }
+    .badmv-hero-card img{width:100%;height:510px;object-fit:cover}
+    .badmv-hero-card .badmv-overlay{
+      position:absolute;inset:auto 18px 18px 18px;
+      background:rgba(15,23,42,.88);color:white;border-radius:18px;
+      padding:18px 20px;backdrop-filter:blur(10px)
+    }
+    .badmv-overlay small{display:block;color:#CBD5E1;font-weight:700;margin-bottom:4px}
+    .badmv-overlay strong{font-size:21px}
+
+    .badmv-stats{padding:18px 0 70px}
+    .badmv-stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .badmv-stat{
+      background:white;border:1px solid var(--border);border-radius:20px;padding:22px;
+      box-shadow:0 12px 35px rgba(15,23,42,.045)
+    }
+    .badmv-stat b{display:block;font-size:32px;letter-spacing:-.04em}
+    .badmv-stat span{font-size:14px;color:var(--muted);font-weight:650}
+#badmv-case-study section{padding:76px 0}
+    .badmv-section-head{max-width:760px;margin-bottom:34px}
+    .badmv-kicker{color:var(--brand);font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:.14em}
+    h2{font-size:clamp(34px,4.5vw,54px);line-height:1.08;letter-spacing:-.045em;margin:10px 0 14px}
+    .badmv-section-head p{font-size:18px;color:#64748B;margin:0}
+    .badmv-cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .badmv-card{
+      background:white;border:1px solid var(--border);border-radius:var(--radius);padding:28px;
+      box-shadow:0 14px 42px rgba(15,23,42,.05)
+    }
+    .badmv-card .badmv-num{
+      width:44px;height:44px;border-radius:14px;display:grid;place-items:center;
+      background:var(--soft-blue);color:var(--brand);font-weight:900;margin-bottom:18px
+    }
+    .badmv-card h3{font-size:21px;margin:0 0 8px;letter-spacing:-.02em}
+    .badmv-card p{margin:0;color:#64748B}
+
+    .badmv-dark{background:var(--dark);color:white}
+    .badmv-dark .badmv-section-head p{color:#AAB7CA}
+    .badmv-dark .badmv-kicker{color:#93C5FD}
+    .badmv-solution-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:start}
+    .badmv-solution-list{display:grid;gap:14px}
+    .badmv-solution-item{
+      display:grid;grid-template-columns:42px 1fr;gap:14px;
+      padding:18px;border:1px solid rgba(255,255,255,.1);border-radius:18px;
+      background:rgba(255,255,255,.04)
+    }
+    .badmv-solution-item .badmv-check{
+      width:42px;height:42px;border-radius:13px;display:grid;place-items:center;
+      background:rgba(16,185,129,.14);color:#6EE7B7;font-weight:900
+    }
+    .badmv-solution-item h3{margin:1px 0 4px;font-size:17px}
+    .badmv-solution-item p{margin:0;color:#B6C2D2;font-size:14px}
+
+    .badmv-image-card{
+      border-radius:26px;overflow:hidden;background:white;border:1px solid rgba(255,255,255,.1);
+      box-shadow:0 30px 80px rgba(0,0,0,.22)
+    }
+    .badmv-image-card img{width:100%;height:100%;object-fit:cover}
+
+    .badmv-results-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .badmv-result-card{background:white;border:1px solid var(--border);border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}
+    .badmv-result-card img{width:100%;aspect-ratio:16/7.1;object-fit:cover;background:#fff}
+    .badmv-result-copy{padding:20px 22px 24px}
+    .badmv-result-copy strong{display:block;font-size:19px;margin-bottom:4px}
+    .badmv-result-copy span{color:var(--muted);font-size:14px}
+
+    .badmv-metric-strip{
+      margin:28px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px
+    }
+    .badmv-metric{
+      border-radius:18px;padding:19px;background:#F8FAFC;border:1px solid var(--border)
+    }
+    .badmv-metric .badmv-big{font-size:28px;font-weight:900;letter-spacing:-.04em}
+    .badmv-metric .badmv-lab{font-size:13px;color:#64748B;font-weight:700;margin-top:3px}
+
+    .badmv-rank-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .badmv-rank-card{
+      background:white;border-radius:24px;border:1px solid var(--border);padding:14px;box-shadow:var(--shadow)
+    }
+    .badmv-rank-card img{border-radius:16px;width:100%}
+    .badmv-rank-card p{margin:14px 8px 8px;color:#64748B}
+    .badmv-rank-card b{color:var(--text)}
+
+    .badmv-process{
+      display:grid;grid-template-columns:repeat(4,1fr);gap:16px
+    }
+    .badmv-process .badmv-step{
+      padding:24px;background:white;border:1px solid var(--border);border-radius:20px
+    }
+    .badmv-step small{color:var(--brand);font-weight:900}
+    .badmv-step h3{font-size:18px;margin:8px 0 8px}
+    .badmv-step p{font-size:14px;color:#64748B;margin:0}
+
+    .badmv-quote{
+      padding:42px;border-radius:30px;background:linear-gradient(135deg,#EFF6FF,#F8FAFC);
+      border:1px solid #DBEAFE;
+      display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center
+    }
+    .badmv-quote h2{margin-top:0}
+    .badmv-quote p{font-size:18px;color:#475569}
+    .badmv-quote .badmv-mini{
+      background:white;border:1px solid var(--border);border-radius:22px;padding:22px
+    }
+    .badmv-mini .badmv-row{display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid var(--border)}
+    .badmv-mini .badmv-row:last-child{border-bottom:0}
+    .badmv-mini span{color:#64748B}
+    .badmv-mini b{text-align:right}
+#badmv-case-study footer{padding:36px 0 52px;color:#64748B}
+    .badmv-foot{display:flex;justify-content:space-between;gap:22px;align-items:center;border-top:1px solid var(--border);padding-top:28px}
+    .badmv-foot b{color:var(--text)}
+
+    .badmv-fade{opacity:0;transform:translateY(18px);transition:.7s ease}
+    .badmv-fade.show{opacity:1;transform:none}
+
+    .badmv-nav-actions{display:flex;align-items:center;gap:12px}
+    .badmv-nav-toggle{
+      display:none;
+      width:44px;height:44px;padding:0;
+      border:1px solid var(--border);border-radius:13px;
+      background:white;cursor:pointer;
+      align-items:center;justify-content:center;flex-direction:column;gap:5px;
+    }
+    .badmv-nav-toggle span{
+      width:20px;height:2px;border-radius:2px;background:var(--text);
+      transition:transform .2s ease, opacity .2s ease;
+    }
+    .badmv-nav-toggle.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .badmv-nav-toggle.active span:nth-child(2){opacity:0}
+    .badmv-nav-toggle.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+    @media(max-width:960px){
+      .badmv-hero-grid,.badmv-solution-grid,.badmv-quote{grid-template-columns:1fr}
+      .badmv-stats-grid,.badmv-process{grid-template-columns:repeat(2,1fr)}
+      .badmv-cards3{grid-template-columns:1fr}
+      .badmv-hero-card img{height:430px}
+      .badmv-nav-links{display:none}
+      .badmv-nav-toggle{display:flex}
+      .badmv-nav-links.mobile-open{
+        display:flex;
+        position:absolute;
+        top:calc(100% + 1px);
+        left:0;right:0;
+        flex-direction:column;
+        gap:0;
+        padding:10px 18px 18px;
+        background:rgba(248,250,252,.98);
+        border-bottom:1px solid var(--border);
+        box-shadow:0 18px 35px rgba(15,23,42,.08);
+      }
+      .badmv-nav-links.mobile-open a{
+        padding:14px 4px;
+        border-bottom:1px solid var(--border);
+      }
+      .badmv-nav-links.mobile-open a:last-child{border-bottom:0}
+    }
+
+    @media(max-width:680px){
+      #badmv-case-study{overflow-x:hidden}
+#badmv-case-study{overflow-x:hidden}
+      .badmv-wrap{width:100%;padding-left:16px;padding-right:16px}
+      .badmv-nav-inner{height:68px;gap:10px}
+      .badmv-brand{gap:9px;font-size:14px}
+      .badmv-brand-mark{width:36px;height:36px;border-radius:11px;font-size:11px}
+      .badmv-nav-actions{gap:8px}
+      .badmv-nav-cta{padding:10px 13px;font-size:13px;border-radius:10px}
+      .badmv-nav-toggle{width:42px;height:42px;border-radius:12px}
+
+      .badmv-hero{padding:46px 0 34px}
+      .badmv-hero-grid{gap:32px}
+      .badmv-eyebrow{font-size:11px;padding:7px 10px;line-height:1.35}
+      h1{font-size:clamp(38px,11vw,50px);line-height:1.03;letter-spacing:-.05em;margin:16px 0 16px}
+      .badmv-hero p{font-size:16px;line-height:1.65;margin-bottom:22px}
+      .badmv-hero-actions{display:grid;grid-template-columns:1fr;gap:10px}
+      .badmv-btn{width:100%;padding:13px 16px;font-size:14px}
+      .badmv-hero-card{border-radius:22px}
+      .badmv-hero-card img{height:280px}
+      .badmv-hero-card .badmv-overlay{left:12px;right:12px;bottom:12px;padding:14px 15px;border-radius:15px}
+      .badmv-overlay strong{font-size:16px;line-height:1.35}
+
+      .badmv-stats{padding:12px 0 46px}
+      .badmv-stats-grid{grid-template-columns:1fr 1fr;gap:10px}
+      .badmv-stat{padding:16px;border-radius:16px}
+      .badmv-stat b{font-size:26px}
+      .badmv-stat span{font-size:12px;line-height:1.45}
+#badmv-case-study section{padding:52px 0}
+      .badmv-section-head{margin-bottom:26px}
+      .badmv-kicker{font-size:10px;letter-spacing:.12em}
+      h2{font-size:clamp(30px,8.5vw,42px);line-height:1.08;margin:8px 0 12px}
+      .badmv-section-head p{font-size:15px;line-height:1.65}
+      .badmv-cards3{gap:12px}
+      .badmv-card{padding:21px;border-radius:18px}
+      .badmv-card .badmv-num{width:40px;height:40px;border-radius:12px;margin-bottom:14px}
+      .badmv-card h3{font-size:18px}
+      .badmv-card p{font-size:14px;line-height:1.6}
+
+      .badmv-dark{padding-top:56px;padding-bottom:56px}
+      .badmv-solution-grid{gap:28px}
+      .badmv-solution-list{gap:10px}
+      .badmv-solution-item{grid-template-columns:36px 1fr;gap:11px;padding:14px;border-radius:15px}
+      .badmv-solution-item .badmv-check{width:36px;height:36px;border-radius:11px}
+      .badmv-solution-item h3{font-size:15px}
+      .badmv-solution-item p{font-size:13px;line-height:1.55}
+      .badmv-image-card{border-radius:20px}
+      .badmv-image-card img{max-height:320px;object-fit:cover}
+
+      .badmv-results-grid,.badmv-rank-grid,.badmv-metric-strip,.badmv-process{grid-template-columns:1fr;gap:14px}
+      .badmv-result-card{border-radius:18px}
+      .badmv-result-card img{aspect-ratio:16/9}
+      .badmv-result-copy{padding:16px 17px 18px}
+      .badmv-result-copy strong{font-size:16px}
+      .badmv-result-copy span{font-size:13px;line-height:1.5}
+      .badmv-metric{padding:16px;border-radius:15px}
+      .badmv-metric .badmv-big{font-size:25px}
+      .badmv-metric .badmv-lab{font-size:12px}
+      .badmv-rank-card{padding:10px;border-radius:18px}
+      .badmv-rank-card img{border-radius:12px}
+      .badmv-rank-card p{font-size:13px;line-height:1.55;margin:11px 6px 6px}
+
+      .badmv-process .badmv-step{padding:19px;border-radius:17px}
+      .badmv-step h3{font-size:17px}
+      .badmv-step p{font-size:13px;line-height:1.55}
+
+      .badmv-quote{padding:22px;border-radius:21px;gap:20px}
+      .badmv-quote h2{font-size:30px}
+      .badmv-quote p{font-size:15px;line-height:1.6}
+      .badmv-quote .badmv-mini{padding:17px;border-radius:17px}
+      .badmv-mini .badmv-row{gap:12px;padding:10px 0;font-size:13px}
+      .badmv-mini b{text-align:right;max-width:58%}
+#badmv-case-study footer{padding:28px 0 38px}
+      .badmv-foot{flex-direction:column;align-items:flex-start;gap:10px;padding-top:20px;font-size:12px;line-height:1.55}
+
+      .badmv-nav-links.mobile-open{
+        max-height:calc(100vh - 69px);
+        overflow-y:auto;
+      }
+    }
+
+    @media(max-width:390px){
+      .badmv-wrap{padding-left:14px;padding-right:14px}
+      .badmv-brand span:last-child{display:none}
+      .badmv-nav-cta{padding:9px 11px;font-size:12px}
+      .badmv-hero{padding-top:38px}
+      h1{font-size:37px}
+      .badmv-stats-grid{grid-template-columns:1fr}
+      .badmv-stat b{font-size:25px}
+      .badmv-hero-card img{height:240px}
+#badmv-case-study section{padding:46px 0}
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      #badmv-case-study{scroll-behavior:auto}
+      .badmv-fade,.badmv-fade.show{transition:none;transform:none}
+      .badmv-nav-toggle span{transition:none}
+    }
+  
+  </style>
+</head>
+<body>
+  <div id="badmv-case-study">
+  <header class="badmv-nav">
+    <div class="badmv-wrap nav-inner">
+      <a class="badmv-brand" href="#">
+        <span class="badmv-brand-mark">SEO</span>
+        <span>Better Appliance DMV</span>
+      </a>
+      <nav class="badmv-nav-links" id="badmv-siteNav">
+        <a href="#badmv-challenge">Challenge</a>
+        <a href="#badmv-solution">Solution</a>
+        <a href="#badmv-results">Results</a>
+        <a href="#badmv-rankings">Rankings</a>
+      </nav>
+      <div class="badmv-nav-actions">
+        <a class="badmv-nav-cta" href="#badmv-results">View Results</a>
+        <button class="badmv-nav-toggle" id="badmv-navToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="badmv-siteNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="badmv-hero">
+      <div class="badmv-wrap hero-grid">
+        <div class="badmv-fade">
+          <span class="badmv-eyebrow"><span class="badmv-dot"></span> SEO Case Study · Better Appliance DMV</span>
+          <h1>From limited visibility to millions of search impressions.</h1>
+          <p>
+            Better Appliance DMV needed stronger organic visibility for appliance-related searches across its target service areas.
+            The project focused on technical SEO, local search optimization, content structure, and stronger keyword coverage.
+          </p>
+          <div class="badmv-hero-actions">
+            <a class="badmv-btn btn-primary" href="#badmv-results">See the growth</a>
+            <a class="badmv-btn btn-secondary" href="#badmv-solution">How it was solved</a>
+          </div>
+        </div>
+        <div class="badmv-hero-card fade">
+          <img src="assets/store-interior.webp" alt="Better Appliance showroom interior with home appliances">
+          <div class="badmv-overlay">
+            <small>Client</small>
+            <strong>Better Appliance DMV · Home Appliance Retail</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="badmv-stats">
+      <div class="badmv-wrap stats-grid">
+        <div class="badmv-stat fade"><b>3.05M</b><span>Search impressions shown in a 16-month GSC snapshot</span></div>
+        <div class="badmv-stat fade"><b>20.7K</b><span>Organic clicks shown in the same long-term snapshot</span></div>
+        <div class="badmv-stat fade"><b>2.43M</b><span>Impressions in a recent 3-month performance view</span></div>
+        <div class="badmv-stat fade"><b>9.23K</b><span>Clicks in that recent 3-month period</span></div>
+      </div>
+    </section>
+
+    <section id="badmv-challenge">
+      <div class="badmv-wrap">
+        <div class="badmv-section-head fade">
+          <div class="badmv-kicker">The challenge</div>
+          <h2>The site had room to grow in both organic and local search.</h2>
+          <p>
+            The goal was not only to increase traffic, but to make the website more discoverable for commercial appliance searches
+            in the locations the business actually serves.
+          </p>
+        </div>
+        <div class="badmv-cards3">
+          <article class="badmv-card fade">
+            <div class="badmv-num">01</div>
+            <h3>Weak local keyword coverage</h3>
+            <p>Important city and service-area searches were not being captured consistently across the website.</p>
+          </article>
+          <article class="badmv-card fade">
+            <div class="badmv-num">02</div>
+            <h3>SEO structure needed improvement</h3>
+            <p>Pages needed clearer keyword targeting, stronger internal relevance, and better alignment with search intent.</p>
+          </article>
+          <article class="badmv-card fade">
+            <div class="badmv-num">03</div>
+            <h3>Growth was not yet scalable</h3>
+            <p>The website needed a repeatable SEO system that could grow visibility across categories, locations, and product-related searches.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="badmv-solution" class="badmv-dark">
+      <div class="badmv-wrap solution-grid">
+        <div>
+          <div class="badmv-section-head fade">
+            <div class="badmv-kicker">The solution</div>
+            <h2>A practical SEO strategy built around search intent and local visibility.</h2>
+            <p>
+              The work combined on-page SEO, technical improvements, local targeting, content refinement, and stronger page-to-keyword alignment.
+            </p>
+          </div>
+          <div class="badmv-solution-list">
+            <div class="badmv-solution-item fade">
+              <div class="badmv-check">✓</div>
+              <div><h3>Technical SEO cleanup</h3><p>Improved crawlability, indexing signals, page structure, metadata, and overall site health.</p></div>
+            </div>
+            <div class="badmv-solution-item fade">
+              <div class="badmv-check">✓</div>
+              <div><h3>Keyword mapping</h3><p>Assigned search terms to the most relevant category, location, and commercial pages.</p></div>
+            </div>
+            <div class="badmv-solution-item fade">
+              <div class="badmv-check">✓</div>
+              <div><h3>Local SEO optimization</h3><p>Strengthened location relevance for searches around Alexandria, Forestville, and surrounding markets.</p></div>
+            </div>
+            <div class="badmv-solution-item fade">
+              <div class="badmv-check">✓</div>
+              <div><h3>Content & internal linking</h3><p>Improved copy quality, topical coverage, headings, anchor relevance, and internal navigation between important pages.</p></div>
+            </div>
+            <div class="badmv-solution-item fade">
+              <div class="badmv-check">✓</div>
+              <div><h3>CTR & SERP improvement</h3><p>Refined page titles and descriptions to better match user intent and improve search-result presentation.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="badmv-image-card fade">
+          <img src="assets/website-homepage.webp" alt="Better Appliance DMV website homepage">
+        </div>
+      </div>
+    </section>
+
+    <section id="badmv-results">
+      <div class="badmv-wrap">
+        <div class="badmv-section-head fade">
+          <div class="badmv-kicker">Results</div>
+          <h2>Search visibility accelerated and continued to scale.</h2>
+          <p>
+            Google Search Console screenshots show a strong rise in impressions and clicks, with a particularly visible acceleration in the later period.
+          </p>
+        </div>
+
+        <div class="badmv-results-grid">
+          <div class="badmv-result-card fade">
+            <img src="assets/gsc-12-months.webp" alt="Google Search Console 12 month performance screenshot">
+            <div class="badmv-result-copy">
+              <strong>12-month search performance</strong>
+              <span>14.6K clicks · 1.11M impressions · 1.3% CTR · average position 37.3</span>
+            </div>
+          </div>
+          <div class="badmv-result-card fade">
+            <img src="assets/gsc-16-months-18k.webp" alt="Google Search Console 16 month performance screenshot">
+            <div class="badmv-result-copy">
+              <strong>Expanded visibility over 16 months</strong>
+              <span>18.6K clicks · 2.39M impressions · 0.8% CTR · average position 40.2</span>
+            </div>
+          </div>
+          <div class="badmv-result-card fade">
+            <img src="assets/gsc-16-months-20k.webp" alt="Google Search Console growth screenshot showing 20.7K clicks and 3.05M impressions">
+            <div class="badmv-result-copy">
+              <strong>Long-term growth snapshot</strong>
+              <span>20.7K clicks · 3.05M impressions · clear upward trend in search visibility</span>
+            </div>
+          </div>
+          <div class="badmv-result-card fade">
+            <img src="assets/gsc-3-months.webp" alt="Google Search Console recent 3 month performance screenshot">
+            <div class="badmv-result-copy">
+              <strong>Recent 3-month momentum</strong>
+              <span>9.23K clicks · 2.43M impressions · strong late-period growth</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="badmv-metric-strip">
+          <div class="badmv-metric fade"><div class="badmv-big">20.7K</div><div class="badmv-lab">Clicks in long-term snapshot</div></div>
+          <div class="badmv-metric fade"><div class="badmv-big">3.05M</div><div class="badmv-lab">Impressions in long-term snapshot</div></div>
+          <div class="badmv-metric fade"><div class="badmv-big">9.23K</div><div class="badmv-lab">Clicks in recent 3 months</div></div>
+          <div class="badmv-metric fade"><div class="badmv-big">2.43M</div><div class="badmv-lab">Impressions in recent 3 months</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="badmv-rankings">
+      <div class="badmv-wrap">
+        <div class="badmv-section-head fade">
+          <div class="badmv-kicker">Ranking proof</div>
+          <h2>Local commercial searches started showing the brand prominently.</h2>
+          <p>
+            Search-result screenshots demonstrate visibility for location-based appliance searches in important service areas.
+          </p>
+        </div>
+
+        <div class="badmv-rank-grid">
+          <div class="badmv-rank-card fade">
+            <img src="assets/ranking-alexandria.webp" alt="Google result showing Better Appliance DMV for appliance Alexandria search">
+            <p><b>Example:</b> Better Appliance DMV appearing for an “appliance Alexandria” search.</p>
+          </div>
+          <div class="badmv-rank-card fade">
+            <img src="assets/ranking-forestville.webp" alt="Google result showing Better Appliance for appliance Forestville search">
+            <p><b>Example:</b> Better Appliance appearing prominently for an “appliance Forestville” search.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="badmv-wrap">
+        <div class="badmv-section-head fade">
+          <div class="badmv-kicker">How the work was structured</div>
+          <h2>A repeatable SEO workflow instead of one-time fixes.</h2>
+        </div>
+        <div class="badmv-process">
+          <div class="badmv-step fade"><small>STEP 01</small><h3>Audit</h3><p>Review technical issues, indexing, content gaps, keyword coverage, and local relevance.</p></div>
+          <div class="badmv-step fade"><small>STEP 02</small><h3>Prioritize</h3><p>Focus first on pages and search terms with the strongest business value and ranking opportunity.</p></div>
+          <div class="badmv-step fade"><small>STEP 03</small><h3>Implement</h3><p>Optimize content, metadata, internal links, page targeting, local signals, and technical elements.</p></div>
+          <div class="badmv-step fade"><small>STEP 04</small><h3>Measure & refine</h3><p>Use Search Console data to improve pages based on impressions, clicks, CTR, and ranking movement.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="badmv-wrap quote fade">
+        <div>
+          <div class="badmv-kicker">Case study summary</div>
+          <h2>The project turned SEO into a measurable growth channel.</h2>
+          <p>
+            Better Appliance DMV gained much stronger search exposure, substantial click growth, and visible rankings for local commercial terms.
+            The biggest improvement came from combining technical fixes with search-intent targeting and consistent local SEO execution.
+          </p>
+          <a class="badmv-btn btn-primary" href="#badmv-results">Review the evidence</a>
+        </div>
+        <div class="badmv-mini">
+          <div class="badmv-row"><span>Industry</span><b>Home Appliances</b></div>
+          <div class="badmv-row"><span>Market</span><b>DMV Area</b></div>
+          <div class="badmv-row"><span>Primary focus</span><b>Organic + Local SEO</b></div>
+          <div class="badmv-row"><span>Evidence</span><b>Google Search Console + SERPs</b></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="badmv-wrap foot">
+      <div><b>Better Appliance DMV SEO Case Study</b><br>Portfolio-ready single project page.</div>
+      <div>Built for a clean international-standard SEO portfolio.</div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('badmv-navToggle');
+    const siteNav = document.getElementById('badmv-siteNav');
+
+    navToggle.addEventListener('click', () => {
+      const open = siteNav.classList.toggle('mobile-open');
+      navToggle.classList.toggle('active', open);
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    });
+
+    siteNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        siteNav.classList.remove('mobile-open');
+        navToggle.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Open navigation');
+      });
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 960) {
+        siteNav.classList.remove('mobile-open');
+        navToggle.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Open navigation');
+      }
+    });
+
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      })
+    },{threshold:.12});
+    document.querySelectorAll('.badmv-fade').forEach(el=>observer.observe(el));
+  </script>
+  </div>
+</body>
+</html>
